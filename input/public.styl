@@ -1,0 +1,426 @@
+﻿@import 'reset.css'
+
+/* @import "function.css"; */
+/*
+
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#99ffffff,endColorstr=#99ffffff)";  
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff,endColorstr=#99ffffff);
+background:rgba(255,255,255,.8);
+
+
+filter:alpha(opacity=40); 针对 IE8 以及更早的版本 */
+.w
+	margin 0 auto
+	max-width 1450px
+	width 100%
+
+body
+	font-size 100%
+
+.header
+	border-bottom 2px solid #e6e6e6
+	var v-height = 56px
+
+
+	.brand
+		display block
+		margin-right 20px
+		width 80px
+		height v-height
+		background url('') left center no-repeat
+		
+
+	.root-link
+		display block
+		width 80px
+		height v-height
+		color #000000
+		text-align center
+		font-size 16px
+		line-height v-height
+		transition 0.3s
+
+		&:hover
+		&.active
+			background #006bff
+			color #ffffff
+	.link
+		font-size 14px
+		color #666666
+		padding 10px
+		transition 0.3s
+		display block
+		line-height 1
+		margin 11px 0
+		&.p10-0
+			padding 10px 0 
+		&:hover
+			color #0084ff
+	
+	.download
+		position relative
+		&:hover
+			.link
+				&+.layout
+					display block
+		.layout
+			position absolute
+			top 100%
+			z-index 1
+			padding-top 8px
+			transform translateX(-50%)
+			left 50%
+			background url('../img/22017532e29db5265fb22137c0381f4f-111+15.png') left top no-repeat
+			width 112px
+			display none
+			img
+				display block
+				width 100%
+				border-radius 10px
+
+.live-container
+	background url('../img/e1b0a24c9e24c93de7aa1ce40b619a46-1927+700.jpg') center center no-repeat
+	padding 20px 0
+	box-sizing border-box
+	.live
+		position relative
+		width (1160 / 1450) * 100%
+		overflow hidden
+		background #000000
+		&:hover
+		&.active
+			.control-bar
+				transform translateY(0)
+		video 
+			display block
+			width 100%
+			height 100%
+		.control-bar
+			position absolute
+			bottom 0
+			left 0
+			right 0
+			background linear-gradient(to bottom,rgba(#4a4c4d,30%),rgba(#2b2d2d,30%))
+			height 30px
+			transform translateY(100%)
+			transition 0.3s
+			border-radius 3px
+			.go-live
+				display block
+				margin 5px 30px
+				width 93px
+				height 20px
+				line-height 20px
+				background #0084ff
+				text-align center
+				font-size 12px
+				color #ffffff
+				border-radius 5px
+			.full-page
+				display block
+				width 20px
+				height 30px
+				background url('../img/ce52f6b2e8522fd38c2b0c1cd5129b81-16+16.png') center center no-repeat
+			.play-paush
+				margin 0 10px
+				display block
+				height 30px
+				width 30px
+				background url('../img/9c1edf3f9f88b7f85e1814f672bbeb6c-15+18.png') center center no-repeat
+				transition 0.3s
+				&.active
+					background-image url('../img/228b40bdf1220a661aa25ad4a28250e0-14+18.png')
+			.reload
+				display block
+				margin 0 10px 0 0
+				width 30px
+				height 30px
+				background url('../img/f253e1e2e235e27aef05684edce6d141-18+18.png') center center no-repeat
+
+
+				
+				
+	.hot
+		width (275.5 / 1450) * 100%
+		height 100%
+		padding 0 10px 10px
+		box-sizing border-box
+		background #9d5cf6
+		.item
+			margin-top 10px
+			position relative
+			transition 0.3s
+			img
+				display block
+				width 100%
+			&:after
+				content ''
+				position absolute
+				left -4px
+				top 50%
+				transform translate(-100%,-50%)
+				border 5px solid transparent
+				transition 0.3s
+			&:hover
+			&.active
+				box-shadow 0 0 0 4px #ff00cc
+				&:after
+					border-right-color #ff00cc
+
+.type-container
+	border-radius 3px
+	.r-title
+		padding-left 20px
+		font-size 24px
+		color #000000
+		line-height 70px
+		border-bottom 1px solid #f2f2f2
+		h3
+			padding-left 30px
+			background url('') left center no-repeat
+	.list
+		padding-right 20px
+		padding-top 20px
+		li
+			padding-left 20px
+			padding-bottom 40px
+			width ((1450px - 20*6 ) / 5)
+			@media(max-width 1500px)
+				width calc(25% - 20px)
+				&:nth-child(9)
+				&:nth-child(10)
+					display none
+			.pic
+				position relative
+				margin-bottom 10px
+				overflow hidden
+				&:after
+					content ''
+					position absolute
+					left 0
+					right 0
+					bottom 0
+					top 0
+					background transparent url('../img/770fbea7c4c914d2eba8957f84a8992e-48+48.png') center center no-repeat
+					transform scale(2)
+					transform-origin center center
+					opacity 0
+					transition 0.3s
+				&:hover
+					&:after
+						background-color rgba(#000,0.3)
+						transform scale(1)
+						opacity 1
+						
+				img
+					display block
+					width 100%
+					border-radius 5px
+			.author-info
+				.pic
+					padding-right 10px
+					img
+						display block
+						width 40px
+						height 40px
+						border-radius 50%
+				.title
+					font-size 14px
+					color #000000
+				.name
+					padding-top 5px
+					font-size 12px
+					color #666666
+			.hot
+				margin-top 20px
+				padding-left 20px
+				font-size 16px
+				color #666666
+				background url('') left center no-repeat
+				
+					
+
+
+.footer
+	padding 30px 0
+	background #3f3f3f
+	font-size 14px
+	color #979797
+	line-height 24px
+	text-align center
+	span
+		padding 0 10px
+
+.sound-volume
+	.icon
+		width 30px
+		height 30px
+		background url('../img/92a4651eaa4b877c4decc064d4ced30f-14+18.png') center center no-repeat
+	.sound-volume-container
+		position relative
+		margin 10px 0
+		width 100px
+		height 8px
+		border 1px solid #242727
+		background #242727
+		border-radius 5px
+		.progress
+			position absolute
+			top 0
+			bottom 0
+			left 0
+			width 50%
+			background #fee831	linear-gradient(-45deg,#fdd900 25%,transparent 25%,transparent 50%,#fdd900 50%,#fdd900 75%,transparent 75%,transparent) left top/ 10px 10px repeat
+			border-radius 5px
+		.track
+			position absolute
+			left 50%
+			width 12px
+			height 12px
+			top -2px
+			border-radius 50%
+			transform translateX(-50%)
+			background #fee831
+// linear-gradient(-45deg,#fdd900 25%,transparent 25%,transparent 50%,#fdd900 50%,#fdd900 75%,transparent 75%,transparent) left top/ 10px 10px repeat
+
+.layout-login-register
+	position fixed
+	top 50%
+	left 50%
+	transform translate(-50%,-50%)
+	width 416px
+	height 566px
+	background #ffffff url('../img/4407351477285fa30b515522397d1f51-418+94.jpg') -3px top/419px auto no-repeat
+	border-radius 5px
+	display none
+	.close
+		position absolute
+		width 18px
+		height 18px
+		top 0
+		right 0
+		transform translate(50%, -50%)
+		background url('../img/cac24c26b957b8f3c1906c36a47a50ac-18+18.png') left center no-repeat
+	.tabs-control
+		padding-top 20px
+		text-align center
+		a
+			font-size 18px
+			color #ffffff
+			line-height 34px
+			width 70px
+			display inline-block
+			border-bottom 3px solid transparent
+			transition 0.3s
+			text-align center
+			margin 0 20px
+			&:hover
+			&.active
+				border-bottom-color #e5004f
+	.tabs-wrapper
+		.input
+			position relative
+			padding 12px 0 6px 
+			border-bottom 1px solid #dcdcdc
+			.code
+				position absolute
+				top 12px
+				bottom 6px
+				right 0
+				cursor pointer
+				img
+					display block
+					height 100%
+			input
+				height 28px
+				font-size 12px
+				color #a6a6a6
+				line-height 28px
+				padding 0 10px
+				width 100%
+				outline none
+				border none
+				background none
+				box-sizing border-box
+				&::placeholder
+					font-family 'microsoft yahei'
+					color #a6a6a6
+		.seng-code-wrinner
+			font-size 12px
+			padding 7px 10px 22px
+			box-sizing border-box
+			span
+				color #00cea8
+			a
+				color #ff0000
+				text-decoration underline
+		.btn-login
+			display block
+			border-radius 5px
+			border 1px solid #00cea8
+			text-align center
+			height 38px
+			text-align center
+			line-height 38px
+			font-size 12px
+			color #00cea8
+			&.m20-0-10
+				margin 20px 0 10px
+		h3
+			margin-top 10px
+			padding 20px 0
+			text-align center
+			position relative
+			font-size 14px
+			color #4e4e4e
+			&.mt0
+				margin-top 0
+			&:after
+				content ''
+				position absolute
+				left 0
+				right 0
+				top 50%
+				border-top 1px solid #dbdbdb
+			span
+				position relative
+				z-index 1
+				padding 0 10px
+				background #ffffff
+		.qq-wechat-login
+			text-align center
+			a
+				display inline-block
+				margin 0 20px
+				h4
+					padding-top 15px
+					font-size 12px
+					color #666666
+				.pic
+					img
+						display block
+						margin 0 auto
+		p
+			text-align center
+			font-size 12px
+			color #919191
+			a
+				color #00cea8
+				text-decoration underline
+		.w300
+			width 300px
+			margin 0 auto
+		.row
+			width 250px
+			margin 0 auto
+	.login-container
+		padding-top 64px
+
+	.register-container
+		padding-top 30px
+
+	.login-container
+	.register-container
+		display none
+		&.active
+			display block
